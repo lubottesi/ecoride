@@ -1,0 +1,91 @@
+/* styles/transportes.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+}
+
+.nav_ola{
+    background-color: #32be8f;
+}
+
+.navbar-brand {
+    color: #1e1e1e;
+    font-size: 1.5rem;
+}
+
+
+.selecionar_transporte{
+    font-size: 24px;
+	color: #999;
+    text-align: center;
+    margin: 90px auto 0 auto; /* Adiciona margem automática se necessário para centralização do elemento pai */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza o contêiner horizontalmente */
+    align-items: center; /* Centraliza o contêiner verticalmente */
+    min-height: 70vh; /* Garante que o contêiner ocupe toda a altura da tela */
+}
+
+.card {
+    padding: 20px;
+    background: #1e1e1e;
+    border: #32be8f solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    width: 60px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.title {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Ajuste o tamanho dos cards em dispositivos móveis */
+.card-responsive {
+    width: 100%; /* Faz com que os cards ocupem toda a largura disponível em dispositivos móveis */
+    max-width: 300px; /* Define um tamanho máximo para os cards */
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+.iframe-container {
+    width: 100%;
+    height: calc(100vh - 56px); /* Subtrai a altura da navbar (geralmente 56px) */
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* Opcional: Adiciona um pouco de espaçamento para os cards em dispositivos móveis */
+@media (max-width: 576px) {
+
+    .selecionar_transporte{
+        margin: 70px auto 15px auto; /* Adiciona margem automática se necessário para centralização do elemento pai */
+    }
+
+    .container{
+        min-height: 100vh;
+    }
+
+    .card-responsive {
+        margin: 0 auto; /* Centraliza os cards em dispositivos móveis */
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide</title>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <img class="wave" src="img/wave.png">
+
+    <div class="container_main">
+        <div class="logo">
+            <img src="img/logo.svg" alt="">
+        </div>
+
+        <div class="login-container">
+            <form action="index.html" class="login-dados">
+                <h1>Bem-Vindo</h1>
+                <img class="avatar" src="img/avatar.svg" alt="">
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>Nome</h5>
+                        <input type="text" class="input" id="username">
+                    </div>
+                </div>
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h5>Email</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div>
+                        <h5>Senha</h5>
+                        <input type="password" class="input">
+                    </div>
+                </div>
+
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div>
+                        <h5>Confirme sua senha</h5>
+                        <input type="password" class="input">
+                    </div>
+                </div>
+
+                <p class="conta">Tem uma conta? <a href="index.html">Entre</a></p>
+                <input type="submit" value="Criar" id="botaoEntrar" class="botao" onclick="salvarUsuario(event)">
+            </form>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

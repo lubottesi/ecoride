@@ -1,0 +1,147 @@
+/* Reseta margens e paddings, e configura box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho da navegação */
+.nav_ola {
+    background-color: #38d39f;
+}
+
+.navbar-brand {
+    color: #1e1e1e;
+    font-size: 1.5rem;
+}
+
+/* Estilo do título principal */
+h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.container_tudo{
+    display: flex;
+}
+
+.container_rota{
+    margin: 3rem 0 0 1rem;
+}
+
+
+/* Estilo dos campos de entrada */
+input[type="text"] {
+    width: 80%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Estilo do botão de cálculo de rota */
+.button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-position 0.5s;
+}
+
+.next_page{
+    display: flex;
+    justify-content: end;
+    margin-right: 1.5em;
+}
+
+.button:hover {
+    background-position: right;
+}
+
+/* Estilo da div do mapa */
+#map {
+    width: 100%;
+    height: 500px;
+    margin: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo da div dos tempos estimados */
+#tempos {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+#tempos h3 {
+    margin-bottom: 1rem;
+}
+
+#tempos p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 900px) {
+    .container_tudo {
+        flex-direction: column;
+        align-items: center; /* Centraliza os elementos na coluna */
+        justify-content: center;
+    }
+
+    .container_rota{
+        margin-top: 0;
+    }
+
+    .container_rota input[type="text"] {
+        width: 80%;
+        padding: 0.75rem;
+        margin: 0.25rem 0; /* Reduzi a margem vertical para diminuir o espaço entre os inputs */
+        border: 2px solid #d9d9d9;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        font-size: 1rem;
+        margin-top: 0.5rem; /* Aumenta o espaço entre o label e o input */
+    }
+    
+    .container_rota label {
+        margin-bottom: 0.5rem; /* Aumenta o espaço entre o label e o input */
+    }
+    
+    .container_rota button {
+        margin-top: 0rem; /* Diminui a margem superior para reduzir o espaço com o segundo input */
+        margin-bottom: 0.5rem;
+    }
+
+    .next_page {
+        justify-content: center; /* Centraliza o botão para a próxima página */
+        margin: 1rem 0;
+    }
+
+    #map {
+        width: 100%; /* Faz o mapa ocupar toda a largura */
+        height: 300px; /* Diminui a altura do mapa para melhor visualização no celular */
+        margin: 1rem; /* Ajusta as margens para dispositivos menores */
+    }
+}
+
