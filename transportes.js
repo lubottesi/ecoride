@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (busTime || qtdCarbOnibus || gastoBus) {
-        const busMinutes = (Math.floor(busTime / 60)*2.1);
+        const busMinutes = (Math.floor(busTime / 60))*2.1;
         document.getElementById('tempoEstimadoOnibus').textContent = `Tempo: ${busMinutes} min`;
         document.getElementById('carbOnibus').textContent = `Carbono: ${qtdCarbOnibus} Kg`;
         document.getElementById('gastoOnibus').textContent = `Preço: R$${gastoBus}`;
